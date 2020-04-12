@@ -4,7 +4,8 @@
   "description": "Basic implementation of grpc framework with node.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-proto": "protoc --js_out=import_style=commonjs,binary:. src/proto/latest.proto"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JhoraMormont/grpcNode/issues"
   },
-  "homepage": "https://github.com/JhoraMormont/grpcNode#readme"
+  "homepage": "https://github.com/JhoraMormont/grpcNode#readme",
+  "dependencies": {
+    "grpc": "^1.24.2"
+  }
 }

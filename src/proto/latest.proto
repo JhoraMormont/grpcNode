@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service CatsApi {
+    rpc GetCat (GetCatRequest) returns (GetCatResponse);
+}
+
+message GetCatRequest {
+    int32 id = 1;
+}
+
+message GetCatResponse {
+    string name = 1;
+    string color = 2;
+}
